@@ -1,0 +1,61 @@
+@media (max-width: 768px) {
+
+    #cards_text,
+    #howToProt,
+    #realAtt {
+        flex-direction: column;
+        width: 95%;
+        margin-top: 30px;
+        margin-bottom: 50px;
+    }
+
+    #cards_Div {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        overflow-x: auto;
+        padding-bottom: 15px;
+        border-bottom: 1px solid #333;
+        margin-bottom: 30px;
+    }
+
+    #cards_Div li {
+        min-width: 100px;
+        text-align: center;
+    }
+
+    #right_col {
+        width: 100%;
+    }
+
+    #realAtt {
+        width: 80%;
+    }
+
+    #realDiv {
+        height: 250px;
+        overflow-y: auto;
+    }
+
+    #realH2,
+    #textTitle {
+        font-size: large;
+    }
+
+    #textExample,
+    #howBar,
+    #sub {
+        font-size: small;
+    }
+
+    #homeMain_div h2 {
+        font-size: medium;
+    }
+
+    #tools {
+        display: block;
+        width: 95%;
+        border: none;
+    }
+
+}
