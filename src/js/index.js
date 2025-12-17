@@ -14,7 +14,8 @@ bg_code.textContent = html;
 const texts = [
     {
         title: "> Ataques a APIs",
-        example: `if not token_valido(request.headers.get("Authorization")):
+        example: `if not token_valido(request.headers.get
+        ("Authorization")):
     return "Acesso negado", 401`,
         //icon: "src/imgs/icons/exemplos/0.png",
         text: `Esses ataques exploram falhas em autenticação, autorização ou validação de dados em APIs, permitindo acesso indevido a informações ou funcionalidades restritas.`
@@ -22,9 +23,9 @@ const texts = [
 
     {
         title: "> Engenharia Social",
-        example: `Engenharia social explora o comportamento humano em vez de falhas técnicas, enganando pessoas para obter informações confidenciais como senhas ou acessos internos. É um dos ataques mais eficazes, pois contorna sistemas de segurança.`,
-        text: `Exemplo: 
-"Olá, sou do suporte técnico. Preciso da sua senha para corrigir um erro urgente."`
+        example: `Exemplo: 
+"Olá, sou do suporte técnico. Preciso da sua senha para corrigir um erro urgente."`,
+        text: `Engenharia social explora o comportamento humano em vez de falhas técnicas, enganando pessoas para obter informações confidenciais como senhas ou acessos internos. É um dos ataques mais eficazes, pois contorna sistemas de segurança.`
     },
 
     {
@@ -140,3 +141,4 @@ function topFunction() {
     })
 
 }
+
