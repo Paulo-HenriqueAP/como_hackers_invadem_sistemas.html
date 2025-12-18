@@ -97,20 +97,20 @@ cursor.execute(query, (user_input,))`,
 
 const linkedinTopics = [
     {
-        title: "o ataque ao Linkedin", content: `Lorem ipsum dolor sit amet ut cillum sunt ex mollit culpa eu commodo tempor ipsum aliquip id incididunt occaecat sunt lorem sint sed dolore sit deserunt amet duis ipsum culpa do nulla in magna aute tempor exercitation est culpa ad id voluptate eu tempor laborum tempor.`
+        title: "o ataque ao Linkedin", content: `Em 2012, o LinkedIn foi alvo de um incidente de segurança de grandes proporções, no qual dados de autenticação de usuários foram expostos. Na época, surgiram na internet aproximadamente 6,5 milhões de hashes de senhas, divulgados em um fórum estrangeiro.Posteriormente, em 2016, investigações revelaram que o problema era bem mais amplo do que se imaginava inicialmente: cerca de 117 milhões de contas haviam sido afetadas, o que representava quase a totalidade dos usuários do serviço naquele período.Embora as senhas não estivessem armazenadas em texto claro, os hashes vazados puderam ser quebrados com relativa facilidade, resultando na exposição de muitas credenciais.`
     },
 
     {
-        title: "vulnerabilidade explorada", content: `Lorem dolore labore anim ea velit sed id nisi mollit duis pariatur sint eiusmod pariatur culpa ullamco duis mollit mollit labore occaecat nisi adipiscing deserunt tempor incididunt officia aliqua ut fugiat consequat aute veniam nisi anim sint deserunt ullamco occaecat reprehenderit occaecat pariatur lorem labore ullamco eiusmod exercitation adipiscing.`
+        title: "vulnerabilidade explorada", content: `O principal fator que agravou o incidente foi a forma inadequada de armazenamento das senhas. O LinkedIn utilizava o algoritmo SHA-1 para gerar os hashes, sem a aplicação de salt, uma prática essencial em segurança da informação. Por ser um algoritmo rápido e já considerado obsoleto para proteção de senhas, o SHA-1 permitiu que atacantes quebrassem grande parte das credenciais por meio de ataques de força bruta e uso de tabelas pré-computadas, tornando o vazamento extremamente prejudicial.`
     },
 
     {
-        title: "o impacto causado", content: `Duis adipiscing sit incididunt labore sed ullamco fugiat laboris ipsum magna ullamco aliqua qui veniam irure sed deserunt eiusmod ad consectetur sunt irure ullamco voluptate cupidatat ex elit commodo.
+        title: "o impacto causado", content: `O impacto desse episódio foi significativo tanto para os usuários quanto para a empresa. Muitos usuários tiveram suas senhas descobertas e, como era comum reutilizar a mesma senha em diferentes serviços, diversos ataques subsequentes ocorreram em outras plataformas, prática conhecida como credential stuffing. Para o LinkedIn, o vazamento resultou em danos à reputação, perda de confiança do público e na necessidade de forçar a redefinição de senhas em massa, além de servir como um alerta público sobre falhas graves em práticas de segurança.
 `
     },
 
     {
-        title: "poderia ter sido evitado?", content: `Mollit cillum ad cupidatat id culpa pariatur minim deserunt fugiat incididunt sunt reprehenderit consequat irure ipsum sed ullamco minim qui eiusmod labore lorem enim id minim elit sunt aliquip excepteur consectetur irure quis proident duis anim duis eu do ullamco ad ut dolor culpa.`
+        title: "poderia ter sido evitado?", content: `Esse incidente poderia ter sido evitado com a adoção de medidas básicas de segurança. O uso de algoritmos apropriados para armazenamento de senhas, como bcrypt, PBKDF2, scrypt ou Argon2, aliados à aplicação de salt único por usuário, teria dificultado significativamente a quebra das credenciais. Além disso, mecanismos de monitoramento, controle de acesso mais rigoroso e a implementação de autenticação em dois fatores teriam reduzido tanto a probabilidade do vazamento quanto seus impactos.`
     }
 
 ]
@@ -141,4 +141,5 @@ function topFunction() {
     })
 
 }
+
 
